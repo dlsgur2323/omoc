@@ -172,7 +172,7 @@ public class omoc {
 				while(true){ // 좌측 확인
 					cx--;
 					if(cx >= 0){
-						if(map[bxy[1]][cx] == 1){
+						if(map[bxy[1]][cx] == 2){
 							cnt++;
 						} else {
 							break;
@@ -190,7 +190,7 @@ public class omoc {
 				while(true){ // 우측 확인
 					cx++;
 					if(cx <= 14){
-						if(map[bxy[1]][cx] == 1){
+						if(map[bxy[1]][cx] == 2){
 							cnt++;
 						} else {
 							break;
@@ -214,7 +214,7 @@ public class omoc {
 				while(true){ // 위쪽 확인
 					cy--;
 					if(cy >= 0){
-						if(map[cy][bxy[0]] == 1){
+						if(map[cy][bxy[0]] == 2){
 							cnt++;
 						} else {
 							break;
@@ -232,7 +232,7 @@ public class omoc {
 				while(true){ // 아래쪽 확인
 					cy++;
 					if(cy <= 14){
-						if(map[cy][bxy[0]] == 1){
+						if(map[cy][bxy[0]] == 2){
 							cnt++;
 						} else {
 							break;
@@ -257,7 +257,7 @@ public class omoc {
 					cy--;
 					cx++;
 					if(cy >= 0 && cx <= 14){
-						if(map[cy][cx] == 1){
+						if(map[cy][cx] == 2){
 							cnt++;
 						} else {
 							break;
@@ -280,7 +280,7 @@ public class omoc {
 					cy++;
 					cx--;
 					if(cy <= 14 && cx >= 0){
-						if(map[cy][cx] == 1){
+						if(map[cy][cx] == 2){
 							cnt++;
 						} else {
 							break;
@@ -305,7 +305,7 @@ public class omoc {
 						cy--;
 						cx--;
 						if(cy >= 0 && cx >= 0){
-							if(map[cy][cx] == 1){
+							if(map[cy][cx] == 2){
 								cnt++;
 							} else {
 								break;
@@ -328,7 +328,7 @@ public class omoc {
 						cy++;
 						cx++;
 						if(cy <= 14 && cx <= 14){
-							if(map[cy][cx] == 1){
+							if(map[cy][cx] == 2){
 								cnt++;
 							} else {
 								break;
